@@ -15,6 +15,7 @@ class ViewController: UIViewController {
    @IBOutlet weak var tipPercentageLabel: UILabel!
    @IBOutlet weak var billAmountTextField: UITextField!
    @IBOutlet weak var tipControl: UISegmentedControl!
+
    override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view.
@@ -45,8 +46,8 @@ class ViewController: UIViewController {
 
    override func viewWillAppear(_ animated: Bool) {
        super.viewWillAppear(animated)
-       print("view will appear")
 
+      //change default percentage
        let msg1 = String(Int((defaults.double(forKey: "lowTip")) * 100)) + "%"
        let msg2 = String(Int((defaults.double(forKey: "midTip")) * 100)) + "%"
        let msg3 = String(Int((defaults.double(forKey: "highTip")) * 100)) + "%"
@@ -63,12 +64,12 @@ class ViewController: UIViewController {
 
    override func viewWillDisappear(_ animated: Bool) {
        super.viewWillDisappear(animated)
-       print("view will disappear")
+
    }
 
    override func viewDidDisappear(_ animated: Bool) {
        super.viewDidAppear(animated)
-       print("view did disappear")
+       
    }
 
 }
