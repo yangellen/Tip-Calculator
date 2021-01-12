@@ -9,7 +9,11 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    override func viewDidLoad() {
+   @IBOutlet weak var tip3: UITextField!
+   @IBOutlet weak var tip2: UITextField!
+   @IBOutlet weak var tip1: UITextField!
+
+   override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
