@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
    @IBAction func onTap(_ sender: Any) {
       // hides keyboard
-      view.endEditing(true)
+      //view.endEditing(true)
       
    }
 
@@ -44,9 +44,27 @@ class ViewController: UIViewController {
       individualBill.text = String(format: "$%.2f",perPerson)
    }
 
+   override func viewWillAppear(_ animated: Bool) {
+       super.viewWillAppear(animated)
+       print("view will appear")
+       // This is a good place to retrieve the default tip percentage from UserDefaults
+       // and use it to update the tip amount
+   }
+
    override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
       billAmountTextField.becomeFirstResponder()
    }
+
+   override func viewWillDisappear(_ animated: Bool) {
+       super.viewWillDisappear(animated)
+       print("view will disappear")
+   }
+
+   override func viewDidDisappear(_ animated: Bool) {
+       super.viewDidAppear(animated)
+       print("view did disappear")
+   }
+
 }
 
