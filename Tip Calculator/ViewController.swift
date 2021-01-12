@@ -42,7 +42,11 @@ class ViewController: UIViewController {
       tipPercentageLabel.text = String(format: "$%.2f", tip)
       totalLabel.text = String(format: "$%.2f",total)
       individualBill.text = String(format: "$%.2f",perPerson)
+   }
 
+   override func viewDidAppear(_ animated: Bool) {
+      super.viewDidAppear(animated)
+      billAmountTextField.becomeFirstResponder()
    }
 }
 
