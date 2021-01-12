@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Allow user to slit the bill.
+- [x] Allow user to split the bill.
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
