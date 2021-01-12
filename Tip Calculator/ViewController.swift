@@ -19,19 +19,18 @@ class ViewController: UIViewController {
       super.viewDidLoad()
       // Do any additional setup after loading the view.
       self.title = "Tip Calculator"
+
    }
 
    @IBAction func onTap(_ sender: Any) {
-      // hides keyboard
-      //view.endEditing(true)
-      
+
    }
 
    @IBAction func calculateTip(_ sender: Any) {
       //Get initial bill amount and calculate tips
       let bill = Double(billAmountTextField.text!) ?? 0
       let partySize = Double(numParty.text!) ?? 1
-      let tipPencentages = [0.15, 0.18, 0.2]
+      let tipPencentages = [defaults.double(forKey: "lowTip"), defaults.double(forKey: "midTip"), defaults.double(forKey: "highTip")]
 
       // Calculate tip and total
       let tip = bill * tipPencentages[tipControl.selectedSegmentIndex]
@@ -47,8 +46,14 @@ class ViewController: UIViewController {
    override func viewWillAppear(_ animated: Bool) {
        super.viewWillAppear(animated)
        print("view will appear")
-       // This is a good place to retrieve the default tip percentage from UserDefaults
-       // and use it to update the tip amount
+
+       let msg1 = String(Int((defaults.double(forKey: "lowTip")) * 100)) + "%"
+       let msg2 = String(Int((defaults.double(forKey: "midTip")) * 100)) + "%"
+       let msg3 = String(Int((defaults.double(forKey: "highTip")) * 100)) + "%"
+
+       tipControl.setTitle(msg1, forSegmentAt: 0)
+       tipControl.setTitle(msg2, forSegmentAt: 1)
+       tipControl.setTitle(msg3, forSegmentAt: 2)
    }
 
    override func viewDidAppear(_ animated: Bool) {

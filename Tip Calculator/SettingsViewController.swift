@@ -7,6 +7,8 @@
 
 import UIKit
 
+let defaults = UserDefaults.standard
+
 class SettingsViewController: UIViewController {
 
    @IBOutlet weak var tip3: UITextField!
@@ -33,14 +35,12 @@ class SettingsViewController: UIViewController {
    //save change default values
    @IBAction func tapSave(_ sender: Any) {
 
-      let defaults = UserDefaults.standard
       defaults.set((Double(tip1.text!) ?? 15) / 100, forKey: "lowTip")
       defaults.set((Double(tip2.text!) ?? 18) / 100, forKey: "midTip")
       defaults.set((Double(tip3.text!) ?? 20) / 100, forKey: "highTip")
 
-      //print("high", defaults.double(forKey: "highTip"))
-      //print("mid", defaults.double(forKey: "midTip"))
-      //print("low", defaults.double(forKey: "lowTip"))
+      // Force UserDefaults to save
+      defaults.synchronize()
 
    }
 }
