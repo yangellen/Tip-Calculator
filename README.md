@@ -5,7 +5,7 @@
 
 Submitted by: **Ellen Yang**
 
-Time spent: **X** hours spent in total
+Time spent: **10+** hours spent in total
 
 ## User Stories
 
@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Allow user to split the bill.
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Settings page to change the default tip percentage and have the main page reflect the new default value. 
 
 ## Video Walkthrough
 
@@ -36,7 +36,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Saving data in settings page and have the tip percentage reflect the new default value in main page was most challenge.
 
 ## License
 
