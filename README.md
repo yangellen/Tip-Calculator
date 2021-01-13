@@ -24,6 +24,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+- [x] Add color to the background and round the edge of labels.
 - [x] Allow user to split the bill.
 - [x] Settings page to change the default tip percentage and have the main page reflect the new default value. 
 
