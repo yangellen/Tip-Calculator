@@ -6,7 +6,7 @@
 
 Submitted by: **Ellen Yang**
 
-Time spent: **10** hours spent in total
+Time spent: **10+** hours spent in total
 
 ## User Stories
 
@@ -24,7 +24,6 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Add color to the background and round the edge of labels.
 - [x] Allow user to split the bill.
 - [x] Settings page to change the default tip percentage and have the main page reflect the new default value. 
 
@@ -32,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/K6OBawX.gif)
+![](https://i.imgur.com/YBsZXVM.gif)
 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
