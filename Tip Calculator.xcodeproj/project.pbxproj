@@ -78,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5563B3D263DC3040019508B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C541431925AC095A001DA2B2 /* SettingsViewController.swift */,
+				C5A67C8025ABE2A500788087 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5563B41263DC36D0019508B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C5A67C8725ABE2A700788087 /* LaunchScreen.storyboard */,
+				C5A67C8225ABE2A500788087 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		C5A67C7025ABE2A500788087 = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +119,11 @@
 		C5A67C7B25ABE2A500788087 /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C5563B41263DC36D0019508B /* Storyboard */,
+				C5563B3D263DC3040019508B /* Controller */,
 				C5A67C7C25ABE2A500788087 /* AppDelegate.swift */,
 				C5A67C7E25ABE2A500788087 /* SceneDelegate.swift */,
-				C5A67C8025ABE2A500788087 /* ViewController.swift */,
-				C5A67C8225ABE2A500788087 /* Main.storyboard */,
-				C541431925AC095A001DA2B2 /* SettingsViewController.swift */,
 				C5A67C8525ABE2A700788087 /* Assets.xcassets */,
-				C5A67C8725ABE2A700788087 /* LaunchScreen.storyboard */,
 				C5A67C8A25ABE2A700788087 /* Info.plist */,
 			);
 			path = "Tip Calculator";
