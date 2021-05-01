@@ -17,15 +17,14 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
+* [X] UI animations
 * [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
 - [x] Allow user to split the bill.
 - [x] Settings page to change the default tip percentage and have the main page reflect the new default value. 
+- [x] User sees an app icon on the home screen and a styled launch screen.
 
 ## Video Walkthrough
 
