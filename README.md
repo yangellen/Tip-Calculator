@@ -6,7 +6,7 @@
 
 Submitted by: **Ellen Yang**
 
-Time spent: **10+** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -31,10 +31,6 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/zOByn8SG0J.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-## Notes
-
-Saving data in settings page and have the tip percentage reflect the new default value in main page was most challenge.
 
 ## License
 
